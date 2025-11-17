@@ -20,8 +20,8 @@ class GeneratedField(CheckFieldDefaultMixin, Field[Never, _GT]):
         *,
         expression: Combinable | Expression,
         output_field: Field[Any, _GT],
-        db_persist: bool,
         #
+        db_persist: bool | None = ...,
         verbose_name: str | None = ...,
         name: str | None = ...,
         primary_key: bool = ...,
